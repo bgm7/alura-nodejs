@@ -1,0 +1,15 @@
+{
+  "name": "casadocodigo",
+  "version": "1.0.0",
+  "description": "site da caso do codigo para estudos de nodejs",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "brunno",
+  "license": "ISC",
+  "dependencies": {
+  	"ejs": "^2.3.3",
+  	"express": "^4.13.3"
+  }
+}
