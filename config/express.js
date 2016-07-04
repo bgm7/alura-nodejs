@@ -9,7 +9,7 @@ module.exports = function(){
 	app.set('views', './app/views');
 
 	load('routes', {cwd: 'app'})
-		//.then()
+		.then('infra')
 		.into(app);
 
 	return app;	
