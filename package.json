@@ -4,13 +4,14 @@
   "description": "site da caso do codigo para estudos de nodejs",
   "main": "app.js",
   "scripts": {
-  	"start": "node app.js",
+    "start": "node app.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "brunno",
   "license": "ISC",
   "dependencies": {
-  	"ejs": "^2.3.3",
-  	"express": "^4.13.3"
+    "ejs": "^2.3.3",
+    "express": "^4.13.3",
+    "express-load": "^1.1.15"
   }
 }
