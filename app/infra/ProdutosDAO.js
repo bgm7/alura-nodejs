@@ -1,11 +1,9 @@
-var results = require('../../mock/produto/produtos.json');
-
 function ProdutosDAO(connection){
 	this._connection = connection;
 }
 
 ProdutosDAO.prototype.lista = function(callback){
-		callback(results);
+	this._connection.query('select * from livros', callback);
 }
 
 module.exports = function(){
