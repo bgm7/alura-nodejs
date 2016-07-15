@@ -8,6 +8,7 @@ module.exports = function(app){
 		produtosDAO.lista(function(errors, results){
 			res.format({
 				html: function(){
+					console.log(results);
 					res.render('produtos/lista', {lista:results});
 				},
 				json: function(){
@@ -29,6 +30,7 @@ module.exports = function(app){
 		var produtosDAO = new app.infra.ProdutosDAO(connection);		
 
 		produtosDAO.salva(produto, function(errors, results){
+			console.log(errors);
 			res.redirect('/produtos');
 		});
 
