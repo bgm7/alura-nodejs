@@ -2,7 +2,7 @@ var mysql = require('mysql');
 
 var connectMYSQL = function(){
 	var env = process.env.NODE_ENV || 'produtction';
-
+	
 	if (env === 'development')
 		return mysql.createConnection({
 			host: 'localhost',
