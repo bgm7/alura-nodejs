@@ -251,7 +251,8 @@
     var socket = io();
     socket.on('novaPromocao', function (data) {
         //document.location.href= "/produtos/"+data.livro.id+"?promocao="+data.mensagem;
-        console.log(data.livro);
+        //console.log(data.livro);
+        alert("Livro em promocao " + data.livro.id);
     });
 </script>
 </body>
